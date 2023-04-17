@@ -1,0 +1,222 @@
+	@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Rubik:wght@300;400;700&display=swap');
+
+
+  body {
+    user-select: none;
+    cursor: url('/images/mouse3.png') 0 0,auto;
+    background-size: cover;
+    background-position: center, center;
+    background-image: url(images/bg-img.jpg);
+    background-attachment: fixed;
+    font-family: "Rubik" !important;
+    font-weight: 400;
+    height: -webkit-fill-available;
+		overflow: hidden;
+	}
+
+
+  #continue-msg {
+    z-index: 9999;
+    top: 75%;
+    left: 50%;
+    transform: translate(0%, -1050%);
+    text-align: center;
+    font-size: 16px;
+    color: #1da8c8;
+    text-shadow: 0 0 20px rgba(29, 168, 200, 0.7);
+    filter: drop-shadow(0 0 10px #1da8c8) brightness(90%);
+    opacity: 1;
+    animation: fade 3s infinite;
+}
+
+#continue-msg.show {
+  opacity: 0.9;
+  animation: fade 4s infinite;
+}
+
+@keyframes fade {
+  0%, 10%, 90%, 100% {
+    color: #1da8c8;
+    text-shadow: none;
+    filter: drop-shadow(0 0 10px #1da8c8) brightness(90%);
+  }
+  40% {
+    color: #8ff80a;
+    text-shadow: 0 0 20px rgba(143, 248, 10, 0.5);
+    filter: drop-shadow(0 0 10px #8ff80a) brightness(100%);
+  }
+    60%, 70%, 80%, 100% {
+    color: #1da8c8;
+    text-shadow: none;
+    filter: drop-shadow(0 0 10px #1da8c8) brightness(90%);
+  }
+  40% {
+    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  }
+
+}
+
+  #continue-msg.blue{
+    color: #8ff80a;
+    text-shadow: 0 0 20px rgba(143, 248, 10, 0.7);
+  }
+  #continue-msg.white{
+    color: #ffffff;
+    text-shadow: 0 0 20px rgba(143, 248, 10, 0.5);
+  }
+
+	.logo {
+        cursor: url('/images/mouse3.png'),auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 95vh;
+        width: 97vw;
+        background: transparent;
+      }
+
+      .logo img {
+        user-select: none;
+        max-width: 100%;
+        max-height: 100%;
+        transition: all 0.15s ease-in-out;
+        animation: pulse 2s ease-in-out infinite;
+      }
+      
+	      @keyframes pulse {
+	  0% {
+	    transform: scale(3);
+	  }
+	  50% {
+	    transform: scale(3.2);
+	  }
+	  100% {
+	    transform: scale(3);
+	  }
+	}
+
+      .logo img:hover {
+        cursor: url('/images/mouse3.png'),auto;
+        transition: filter 0.5s;
+		  }
+
+      .logo img:active{
+      cursor: url('/images/mouse4.png') 0 0,auto;
+      }
+
+      /* Unique navbar */
+      .navbar {
+      	height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: radial-gradient(circle, rgba(42,225,171,1) 25%,rgba(73, 173, 197,1),rgba(42,225,171,1),rgba(73, 173, 197,1), rgba(211, 211, 211, 0));
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease-in-out;
+      }
+      .navbar.show {
+        opacity: 1;
+        pointer-events: auto;
+      }
+      .navbar.show:active{
+        cursor: url('/images/mouse4.png'),auto;
+      }
+
+      .navbar ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .navbar li {
+        margin: 1rem;
+      }
+
+      
+
+      .navbar a {
+        cursor: url('/images/mouse3.png'),auto;
+        width: 15rem;
+        background-color: black;
+  		  display: block;
+  		  padding: 1.3rem;
+  		  font-size: 1.5rem;
+  		  text-align: center;
+  		  text-decoration: none;
+  		  color: #8ff80a;
+  		  border-radius: 5rem;
+  		  transition: all 0.15s ease-in-out;
+		}
+
+		.navbar a:hover {
+		  transform: scale(1.05);
+      background-color: #8ff80a;
+      color: black;
+		}
+    .navbar a:active {
+      transform: scale(1.1);
+      cursor: url('/images/mouse4.png') 0 0,auto;
+    }
+
+      .close-btn {
+      	display: none;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+        background-color: black;
+        color: #8ff80a;
+        border: none;
+        padding-right: 6px;
+        padding-left: 6px;
+      }
+
+      .close-btn:hover{
+        cursor: url('/images/mouse3.png'),auto;
+      }
+
+      .close-btn:active{
+        cursor: url('/images/mouse4.png'),auto;
+      }
+
+		      /* For desktop */
+		@media screen and (min-width: 768px) {
+		  .logo img {
+		    width: 15vw;
+		  }
+		}
+
+		/* For mobile */
+		@media screen and (max-width: 767px) {
+      body{
+        background-image: url(/images/mobileBG.jpg)
+      }
+		  .logo img {
+		    width: 30vw;
+		  }
+       #continue-msg {
+    z-index: 9999;
+    top: 75%;
+    left: 50%;
+    transform: translate(0%, -1500%);
+    text-align: center;
+    font-size: 14px;
+    color: rgba(143, 248, 10,0.8);
+  }
+
+.close-btn {
+        top: 1rem;
+        right: 1rem;
+        font-size: 1.2rem;
+      }
+		}	

@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Rubik:wght@300;400;700&display=swap');
+
+body {
+  cursor: url('/images/mouse3.png'),auto;
+  margin: 0;
+  font-family: "Rubik" !important;
+  font-weight: 400;  
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: 18px;
+}
+
+nav {
+  margin: 0 auto;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+
+nav ul li {
+  margin: 0 25px;
+}
+
+
+nav ul li a:hover {
+  cursor: url('/images/mouse3.png'),auto;
+  color: #8ff80a;
+}
+
+nav ul li a:active {
+  cursor: url('/images/mouse4.png'),auto;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+
+main {
+  padding: 20px;
+}
+
+  .banner {
+    width: 100%;
+    user-select: none;
+  }
+
+  h1 {
+    text-align: center;
+    margin:0 auto;
+    font-size: 32px;
+    padding-bottom: 10px;
+  }
+
+  p {
+    text-align: center;
+    width: 38vw;
+    margin:0 auto;
+  }
+
+   h2 {
+    text-align: center;
+    margin:0 auto;
+    font-size: 32px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+
+  #closing-links{
+    text-align: center;
+  }
+
+  .left-image {
+  position: absolute;
+  top: 1;
+  left: 0;
+  user-select: none;
+}
+
+ .right-image {
+  user-select: none;
+  position: absolute;
+  bottom: 1;
+  right: 0;
+}
+
+.left-image img,
+.right-image img {
+   max-width: 30vw;
+  height: auto;
+}
+
+  .link {
+    text-decoration: none;
+    color: blue;
+    cursor: url('/images/mouse3.png'),auto;
+  }
+
+   .link.active {
+    cursor: url('/images/mouse4.png'),auto;
+  }
+
+    /* For mobile */
+    @media screen and (max-width: 767px) {
+      p{
+        width:85vw;
+      }
+      .left-image{
+        display: none;
+      }
+      .right-image{
+        display: none;
+      }
+    } 
