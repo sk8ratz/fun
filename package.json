@@ -1,9 +1,9 @@
 {
-  "name": "my-project",
+  "name": "sk8ratz-fun",
   "version": "1.0.0",
-  "description": "My project description",
+  "description": "SK8 RATZ NFTs",
   "scripts": {
-    "start": "http-server -c-1"
+    "start": "http-server"
   },
   "dependencies": {
     "http-server": "^0.12.3",
