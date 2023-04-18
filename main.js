@@ -1,3 +1,9 @@
+// Blank while loading
+window.addEventListener("load", function () {
+  const loader = document.getElementById("loading");
+  loader.classList.add("hide");
+});
+
 setTimeout(function() {
     document.getElementById("continue-msg").innerText = "PRESS SK8 RATZ TO CONTINUE";
   }, 3000); // 3000 milliseconds = 3 seconds
