@@ -240,6 +240,9 @@
   .navbar.show{
     overflow: hidden;
   }
+  .navbar.show:active{
+        overflow: hidden;
+      }
 
   .navbar li {
         margin: 1rem;
