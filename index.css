@@ -135,6 +135,7 @@
         opacity: 0;
         pointer-events: none;
         transition: opacity 0.3s ease-in-out;
+        overflow: hidden;
       }
       .navbar.show {
         opacity: 1;
@@ -223,12 +224,12 @@
       }
 		  .logo img {
         width: 98vw;
-        margin-top: -70px;
+        margin-top: -100px;
         transition: none;
         animation: none;
 		  }
        #continue-msg {
-        margin-top: -200px;
+        margin-top: -230px;
     text-align: center;
     font-size: 12px;
     color: rgba(143, 248, 10,0.8);
