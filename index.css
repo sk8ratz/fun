@@ -184,6 +184,7 @@
     }
 
       .close-btn {
+        position: fixed;
       	display: none;
         position: absolute;
         top: 1rem;
