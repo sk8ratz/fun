@@ -58,8 +58,10 @@ main {
 }
 
   .banner {
-    width: 100%;
     user-select: none;
+  }
+  .banner img{
+    width: 100%;
   }
 
   h1 {
