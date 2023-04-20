@@ -235,6 +235,7 @@
 
   .navbar{
     margin-top: -40px;
+    overflow: hidden;
   }
   .navbar.show{
     overflow: hidden;
@@ -249,8 +250,8 @@
         width: 15rem;
         background-color: black;
         display: block;
-        padding: 1rem;
-        font-size: 1.5rem;
+        padding: 1.5rem;
+        font-size: 2rem;
         text-align: center;
         text-decoration: none;
         color: #8ff80a;
