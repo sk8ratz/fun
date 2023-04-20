@@ -1,3 +1,9 @@
+// Blank while loading
+window.addEventListener("load", function () {
+  const loader = document.getElementById("loading");
+  loader.classList.add("hide");
+});
+
 const cid = "QmeL5MQmsdejM1caUJRB9gRHXAduZQ6Zf7ajtA19GN35tP";
 const urlFormat = "https://ipfs.io/ipfs/" + cid + "/";
 const container = document.querySelector(".container");
@@ -5,12 +11,6 @@ const numImagesPerBatch = 36;
 let startIndex = 0;
 let loadedImages = new Set();
 let imageCache = {};
-
-// Blank while loading
-window.addEventListener("load", function () {
-  const loader = document.getElementById("loading");
-  loader.classList.add("hide");
-});
 
 // Create an IntersectionObserver instance
 const observer = new IntersectionObserver(entries => {
