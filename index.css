@@ -227,14 +227,14 @@
         animation: none;
 		  }
        #continue-msg {
-        margin-top: -220px;
+        margin-top: -200px;
     text-align: center;
     font-size: 12px;
     color: rgba(143, 248, 10,0.8);
   }
 
   .navbar{
-    margin-top: -90px;
+    margin-top: -40px;
   }
 
   .navbar li {
@@ -243,11 +243,11 @@
 
       .navbar a {
         cursor: url('/images/mouse3.png'),auto;
-        width: 12rem;
+        width: 15rem;
         background-color: black;
         display: block;
         padding: 1rem;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         text-align: center;
         text-decoration: none;
         color: #8ff80a;
@@ -259,6 +259,6 @@
 .close-btn {
         top: 1rem;
         right: 1rem;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
       }
 		}	
