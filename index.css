@@ -24,7 +24,6 @@
     background-position: center, center;
     background-image: url(images/bg-img.jpg);
     background-attachment: fixed;
-    background-color: blue;
     font-family: "Rubik" !important;
     font-weight: 400;
     height: -webkit-fill-available;
@@ -218,14 +217,17 @@
       body{
         overflow-x:hidden;
         overflow-y: scroll;
-        background-image: url(/images/mobileBG2.jpg)
+        background-image: url('/images/mobileBG2.jpg');
+        background-color: #8ff80a;
       }
 		  .logo img {
-        width: 28vw;
-        margin-top: -180px;
+        width: 98vw;
+        margin-top: -70px;
+        transition: none;
+        animation: none;
 		  }
        #continue-msg {
-    transform: translate(0%, -3000%);
+        margin-top: -220px;
     text-align: center;
     font-size: 12px;
     color: rgba(143, 248, 10,0.8);
