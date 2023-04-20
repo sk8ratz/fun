@@ -206,32 +206,16 @@
       }
 
 		      /* For desktop */
-		@media screen and (min-width: 900px) {
+		@media screen and (min-width: 768px) {
 		  .logo img {
 		    width: 15vw;
 		  }
 		}
 
-@media screen and (min-width: 500px) and (max-width: 900px){
-      .logo img {
-        width: 30vw;
-      }
-    }
-
-
 		/* For mobile */
-		@media screen and (max-width: 500px) {
+		@media screen and (max-width: 767px) {
       body{
-        background-image: url(/images/mobileBG.jpg);
-        background-size: cover;
-        background-position: center, center;
-        height: 100vh;
-        width: 100vw;
-        overflow-x:hidden;
-        overflow-y: auto;
-        font-family: "Rubik";
-        display: flex;
-        flex-direction: column;
+        background-image: url(/images/mobileBG.jpg)
       }
 		  .logo img {
 		    width: 30vw;
