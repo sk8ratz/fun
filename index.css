@@ -236,6 +236,9 @@
   .navbar{
     margin-top: -40px;
   }
+  .navbar.show{
+    overflow: hidden;
+  }
 
   .navbar li {
         margin: 1rem;
