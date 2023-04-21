@@ -6,14 +6,14 @@ window.addEventListener("load", function () {
 
 setTimeout(function() {
     document.getElementById("continue-msg").innerText = "PRESS SK8 RATZ TO CONTINUE";
-  }, 3000); // 3000 milliseconds = 3 seconds
+  }, 0000); // 3000 milliseconds = 3 seconds
 
 const continueMsg = document.getElementById('continue-msg');
 
 // Wait for the text to appear before starting the animations
 setTimeout(() => {
   continueMsg.classList.add('show');
-}, 3000);
+}, 0000);
 
 setInterval(() => {
   continueMsg.classList.toggle('blue');
