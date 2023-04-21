@@ -35,7 +35,7 @@
     z-index: 9999;
     top: 75%;
     left: 50%;
-    transform: translate(0%, -750%);
+    transform: translate(0%, -1050%);
     text-align: center;
     font-size: 16px;
     color: #1da8c8;
@@ -121,22 +121,21 @@
       }
 
       /* Unique navbar */
-      .navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: radial-gradient(circle, rgba(42,225,171,1) 25%,rgba(73, 173, 197,1),rgba(42,225,171,1),rgba(73, 173, 197,1), rgba(211, 211, 211, 0));
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease-in-out;
-  /* remove height property */
-}
-
+            .navbar {
+              position: fixed;
+              top: 0;
+              left: 0;
+              bottom: 0;
+              right: 0;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background-image: radial-gradient(circle, rgba(42,225,171,1) 25%,rgba(73, 173, 197,1),rgba(42,225,171,1),rgba(73, 173, 197,1), rgba(211, 211, 211, 0));
+              opacity: 0;
+              pointer-events: none;
+              transition: opacity 0.3s ease-in-out;
+              /* remove height property */
+            }
       .navbar.show {
         opacity: 1;
         pointer-events: auto;
@@ -229,11 +228,11 @@
         animation: none;
 		  }
        #continue-msg {
-        margin-top: -200px;
-    text-align: center;
-    font-size: 12px;
-    color: rgba(143, 248, 10,0.8);
-  }
+        margin-top: -150px;
+        text-align: center;
+        font-size: 12px;
+        color: rgba(143, 248, 10,0.8);
+      }
 
   .navbar{
     margin-top: -40px;
