@@ -212,11 +212,13 @@
       }
 
       .logo-container {
-        width: 60vw;
+        width: 95vw;
       }
 		  .logo-container img {
-        width: 50%;
-        padding: 3rem;
+        width: 100%;
+        padding: 0;
+        animation: none;
+        transition: none;
 		  }
 
       #continue-msg {
@@ -273,11 +275,13 @@ body{
       }
 
       .logo-container {
-        width: 60vw;
+        width: 95vw;
       }
       .logo-container img {
-        width: 50%;
-        padding: 8rem;
+        width: 100%;
+        padding: 0;
+        animation: none;
+        transition: none;
       }
 
       #continue-msg {
