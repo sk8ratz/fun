@@ -4,23 +4,6 @@ window.addEventListener("load", function () {
   loader.classList.add("hide");
 });
 
-setTimeout(function() {
-    document.getElementById("continue-msg").innerText = "PRESS SK8 RATZ TO CONTINUE";
-  }, 0000); // 3000 milliseconds = 3 seconds
-
-const continueMsg = document.getElementById('continue-msg');
-
-// Wait for the text to appear before starting the animations
-setTimeout(() => {
-  continueMsg.classList.add('show');
-}, 0000);
-
-setInterval(() => {
-  continueMsg.classList.toggle('blue');
-  continueMsg.classList.toggle('white');
-}, 3000);
-
-
 // Get the close button and navbar elements
 const closeButton = document.querySelector('.close-btn');
 const navbar = document.querySelector('.navbar');
