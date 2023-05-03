@@ -28,6 +28,7 @@
     font-weight: 400;
     height: -webkit-fill-available;
 		overflow: hidden;
+    position: fixed;
 	}
 
 
@@ -41,9 +42,6 @@
     animation: fade 3s infinite;
 }
 
-#continue-msg.show {
-  animation: fade 4s infinite;
-}
 
 @keyframes fade {
   0%, 10%, 90%, 100% {
@@ -204,6 +202,7 @@
 		/* For mobile */
 		@media screen and (max-width: 600px) {
       body{
+        position: fixed;
         overflow-x:hidden;
         overflow-y: scroll;
         margin: 0;
@@ -214,6 +213,7 @@
       .logo-container {
         width: 95vw;
       }
+
 		  .logo-container img {
         width: 100%;
         padding: 0;
@@ -227,7 +227,7 @@
        
 
   .navbar{
-    margin-top: -40px;
+    margin-top: -20px;
     overflow-y: hidden;
   }
   .navbar.show{
@@ -286,6 +286,7 @@ body{
 
       #continue-msg {
         font-size: 18px;
+        animation: none;
       }
        
 
